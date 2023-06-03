@@ -33,4 +33,8 @@ public class BlogService {
         return blogRepository.findAll();
         // JPA 지원 메소드인 findAll()을 호출해 article 테이블에 저장되어 있는 모든 데이터를 조회
     }
+
+    public void delete(long id){
+        blogRepository.deleteById(id);
+    }
 }
